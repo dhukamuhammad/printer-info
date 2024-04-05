@@ -1,0 +1,363 @@
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ 
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik+Scribble&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik+Scribble&display=swap');
+
+  .navbar {
+    display: flex;
+    height: 100px;
+    background-color: black;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 4px solid #1386D3;
+    font-family: "Inter", sans-serif;
+
+  }
+
+
+  .back-to-top {
+    position: fixed;
+    bottom: 20px; 
+    right: 20px; 
+    z-index: 999; 
+    cursor: pointer;
+  }
+  
+  .back-to-top i {
+    font-size: 24px; 
+    color: white; 
+    background-color: #1386D3; 
+    padding: 9px 12px; 
+    border-radius: 50%; 
+    box-shadow: 0px 0 30px rgba(5, 13, 24, 0.60);
+  }
+  
+
+  /* .bg_image {
+    height: calc(100vh - 100px);
+    overflow: scroll;
+  } */
+
+  .navbar_img img {
+    width: 70px;
+    background-color: black;
+    border-radius: 50%;
+    margin-left: 24px;
+  }
+
+  .navbar_number {
+    color: white;
+  }
+
+  .navbar_number p {
+    margin-top: 12px;
+  }
+
+  .navbar_number p:hover{
+    color: #1386D3;
+    transition: all 0.3s;
+  }
+  .navbar_number i{
+    margin-right: 5px;
+    color: #1386D3;
+
+  }
+
+  .footer_main {
+    display: flex;
+    justify-content: center;
+  }
+
+  .child_footer {
+    padding: 10px 13.5px;
+    border-radius: 40px;
+    background-color: #1386D3;
+    margin-top: 20px;
+    margin: 20px;
+  }
+
+  .child_footer:hover {
+    background-color: white;
+  }
+
+  .child_footer i:hover {
+    color: #1386D3;
+  }
+
+  .child_footer i {
+    color: white;
+    font-size: 15px;
+  }
+
+
+  .bg_image {
+    background-image: url("https://img.freepik.com/free-vector/background-line-gradient-luxury-style_483537-3308.jpg?t=st=1712067548~exp=1712071148~hmac=b7712cc19c3430275519d0fed0a4302d38f1f2e3c02f2ed23e424ec0ca84b70f&w=1060");
+    height: auto;
+    /* background-repeat: no-repeat;
+    background-size: cover; */
+  }
+
+  .printer {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .printer_title {
+    font-size: 33px;
+    font-weight: 800;
+    margin-top: 40px;
+    color: #1386D3;
+    font-family: "Jost", sans-serif;
+  }
+
+  .printer_underline span {
+    border-bottom: 3px solid #1386D3;
+    padding-left: 50px;
+  }
+
+  .printer_def p {
+    /* border: 1px solid rebeccapurple;  */
+    margin-top: 20px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    font-family: "Inter", sans-serif;
+
+
+  }
+
+  .printer_type ul {
+    margin-top: 20px;
+    font-family: "Inter", sans-serif;
+  }
+
+  .printer_type b {
+    font-size: 20px;
+    font-family: "Inter", sans-serif;
+
+  }
+
+  .printer_type li {
+    list-style-type: none;
+    margin-bottom: 15px;
+  }
+
+  .printer_type a{
+    text-decoration: none;
+    color: black;
+  }
+
+  /* .printer_type a:hover{
+    border-bottom: 2px solid #1386D3;
+    transition: all 0.3s;
+  } */
+
+  .main_printer {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    padding: 85px 30px;
+    border: 2px solid #1386D3;
+    box-shadow: 0px 0 30px rgba(5, 13, 24, 0.30);
+    border-radius: 15px;
+
+  }
+
+  .main_printer_img {
+    width: 50%;
+
+
+  }
+
+  .main_printer_img img {
+    width: 400px;
+    border: 2px solid #1386D3;
+    padding: 55px 30px;
+    box-shadow: 0px 0 30px rgba(5, 13, 24, 0.14);
+    border-radius: 15px;
+    mix-blend-mode: multiply;
+    transition: transform 0.3s ease;
+  }
+
+  /* .main_printer_img img:hover {
+    transform: scale(0.1); 
+  } */
+
+  .main_printer_text {
+    width: 40%;
+    /* padding: 10px 5px; */
+
+
+  }
+
+  .main_printer_text p {
+    font-size: 17px;
+    line-height: 25px;
+    word-spacing: 3px;
+    text-align: justify;
+    padding: 20px 20px;
+    border: 2px solid #1386D3;
+    box-shadow: 0px 0 30px rgba(5, 13, 24, 0.14);
+    border-radius: 15px;
+    font-family: "Inter", sans-serif;
+
+  }
+
+
+  .text {
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .footer{
+    height: auto;
+    background-color: black;
+    border-top: 4px solid #1386D3;
+  }
+
+  .footer_tnx p{
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-family: "Inter", sans-serif;  
+  }
+
+  .footer_main{
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer_copy p{
+    color: white;
+    font-family: "Inter", sans-serif;
+        padding-bottom: 18px;
+    padding-top: 20px;
+    margin-bottom: -8px;
+    /* margin-left: -8px; */
+
+  }
+
+  @media (max-width:767px) {
+    .navbar {
+      width: 100%;
+      height: auto;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      padding-left: 18px;
+    }
+
+    .navbar_img img {
+      width: 50px;
+      margin-left: 0px;
+      margin-top: 10px;
+    }
+
+    .child_footer {
+      padding: 8px 12px;
+       margin: 0px;
+      margin-left: 10px;
+    }
+
+    .navbar_number {
+      margin-top: 5px;
+      margin-bottom: 10px;
+    }
+
+    .printer_title {
+      font-size: 27px;
+      font-weight: 900
+
+    }
+    .bg_image {
+      width: 100%;
+    }
+
+    .printer_def p {
+      text-align: justify;
+    }
+
+    .printer_type b{
+      font-size: 18px;
+    }
+
+    .main_printer{
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      padding: 15px 15px;
+      margin-top: 35px;
+      /* border: none; */
+    }
+
+    .main_printer_img{
+      width: 100%;
+
+    }
+
+    .main_printer_text{
+      width: 100%;
+    }
+
+    .main_printer_img img{
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .printer{
+      position: relative;
+      width: 100%;
+      padding-right: 15px;
+      padding-left: 15px;    
+    }
+    .footer_main{
+      padding-left: 20px;
+    }
+    .footer_tnx p{
+      font-size: 15px;
+    }
+
+    .footer_copy p{
+      font-size: 14px;
+    }
+
+  }
+
+  @media (min-width:768px) and (max-width:1023px){
+    .main_printer_img img{
+      width: 100%;
+    }
+    .main_printer{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .main_printer_img {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .main_printer_text{
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  @media (min-width:1024px) and (max-width:1100px){
+    .main_printer{
+      padding: 85px 0px;
+    }
+    .main_printer_text{
+      width: 45%;
+    }
+
+  }
+
+  /* @media (min-width:1101px) and (max-width:1440px){
+    .main_printer_text{
+      width: 36%;
+    }
+  } */

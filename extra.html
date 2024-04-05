@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Underline Effect Example</title>
+  <style>
+    /* CSS styling */
+    .underline-link {
+      position: relative;
+      text-decoration: none; /* Remove default underline */
+      color: #333; /* Link color */
+    }
+
+    /* Define the underline effect */
+    .underline-link:after {
+      position: absolute;
+      left: 0;
+      bottom: -2px; /* Adjust as needed */
+      width: 0;
+      height: 2px; /* Thickness of the underline */
+      content: "";
+      background-color: #007bff; /* Color of the underline */
+      transition: width 0.3s ease-in-out; /* Optional: Add transition for smooth animation */
+    }
+
+    /* Apply the underline effect on hover */
+    .underline-link:hover:after {
+      width: 100%; /* Expand the underline to full width */
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <!-- Example link with underline effect -->
+    <a href="#" class="underline-link">Hover me to see the underline effect</a>
+  </div>
+</body>
+</html>
